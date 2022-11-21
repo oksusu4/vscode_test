@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입</title>
+        <style>
+            *{margin: 0; padding: 0;}
+            body {
+                width: 1000px; margin: 0 auto;
+                /*border: 1px gray solid;*/
+            }
+
+            #wrap {
+                justify-content: center;
+            }
+
+
+            #left {
+                width: 160px; height: 100vh;
+                position: fixed; 
+                border-right: 0.5px lightgray solid;
+                /*background-color: lightgoldenrodyellow;*/
+            }
+
+            #home {
+                position: absolute; right: 15px; top: 400px;
+                text-align: end;
+            }
+            #category {
+                position: absolute; right: 15px; top: 430px;
+                text-align: end;
+            }
+            #write {
+                position: absolute; right: 15px; top: 500px;
+                text-align: end;
+            }
+
+
+
+            #middle {
+                width: 665px; height: 100vh; margin: 0 auto; /*border: 1px blue solid; */
+                position: relative; left: 40px;
+                
+            }
+
+            h1 {
+                position: relative; top: 150px; left: 15px;
+            }
+
+            form {
+                position: relative;
+            }
+
+            #blank {
+                position: relative; top: 300px; left: 100px;
+            }
+
+            #btn {
+                position: relative; top: 350px; left: 190px;
+                width: 100px; height: 30px;
+                border: none; background-color: lightgray;
+            }
+
+            span {
+                color: red;
+            }
+
+            input {
+                border: 1.5px solid lightgray; border-radius: 3px;
+                width: 280px; height: 30px; padding: 5px 8px; 
+            }
+
+            #name {
+                position: relative; top: 10px;
+            }
+
+            #pw {
+                position: relative; top: 20px;
+            }
+
+            /*글자 폰트*/
+
+            .font1 {font-size: 16px; color: black;}
+            .font2{font-size: 19px;}
+            .bold {font-weight: bold;}
+
+        </style>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div id="left">
+                <h2>서비스 이름</h2>
+
+                <div id="home" class="font2">홈</div>
+                <div id="category" class="font2">카테고리</div>
+
+                <div id="write" class="font2">글쓰기</div>
+
+
+
+            </div>
+
+            <div id="middle">
+                <h1>회원가입</h1>
+
+                <div id="blank">
+
+                    <form>
+
+                        <div id="id">
+                            <div class="font1">아이디<span> *</span></div>
+                            <input type="text">
+                        </div>
+
+                        <div id="name">
+                            <div class="font1">닉네임<span> *</span></div>
+                            <input type="text">
+                        </div>
+
+                        <div id="pw">
+                            <div class="font1">비밀번호<span> *</span></div>
+                            <input type="password">
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <button type="submit" id="btn" class="font1 bold">가입</button>
+            </div>
+
+        </div>
+        
+    </body>
+</html>

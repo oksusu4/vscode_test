@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>로그인 페이지</title>
+
+        <style>
+            * {
+                margin: 0; padding: 0;
+            }
+
+            body {
+                width: 960px; margin: 0 auto;
+                background-color: white;
+            }
+            
+            #page-wrapper {
+                background-color: white; width: 960px; height: 100%;
+                position: absolute; 
+                overflow: hidden;
+                /*새로 추가*/
+                justify-content: center;
+                display: flex;
+            }
+
+            #left-nav {
+                background-color: lightpink; width: 160px; height: 100%;
+                left: 0; 
+                float: left;
+                /*새로 추가*/
+                display: flex;
+                flex-direction: column;
+            }
+
+            #middle-feed {
+                background-color: bisque;
+                float: left; width: 640px; 
+            }
+            
+            #right_nav {
+                background-color: lightblue; width: 160px; height: 100%;
+                float: left;
+            }
+
+
+
+        </style>
+
+    </head>
+
+
+    <body>
+
+
+
+
+        <div id="page-wrapper">
+
+            <div id="left-nav"> <!--왼쪽 네비게이션 바-->
+                <div>서비스 이름</div>
+    
+                <div>홈</div>
+                <div>카테고리</div>
+    
+                <div>글쓰기</div>
+            </div>
+
+
+            <div id="middle-feed">
+                <h1>로그인</h1>
+                <form>
+                    <div>
+                        <div>아이디<span>*</span></div>
+                        <input type="text" placeholder="아이디를 입력하세요.">
+                    </div>
+    
+                    <div>
+                        <div>비밀번호<span>*</span></div>
+                        <input type="password" placeholder="비밀번호를 입력하세요.">
+                    </div>
+                </form>
+    
+                <button type="submit">로그인</button>
+    
+                <div>
+                    <button type="button">아이디 및 비밀번호 찾기</button>
+                    <button type="button">회원가입</button>
+                </div>
+
+
+            </div>
+
+
+            <div id="right_nav">
+                <div>
+                    <div>회원이름<span>님,</span></div>
+                    <div>안녕하세요</div>
+                </div>
+    
+                <div>
+                    <button type="button">회원 정보 수정</button>
+                    <button type="button">로그아웃</button>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>

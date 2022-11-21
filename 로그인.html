@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>로그인</title>
+        <style>
+            *{margin: 0; padding: 0;}
+            body {
+                width: 1000px; margin: 0 auto;
+                /*border: 1px gray solid;*/
+            }
+
+            #wrap {
+                justify-content: center;
+            }
+
+            #left {
+                width: 160px; height: 100vh;
+                position: fixed; 
+                border-right: 0.5px lightgray solid;
+                /*background-color: lightgoldenrodyellow;*/
+            }
+
+            #home {
+                position: absolute; right: 15px; top: 400px;
+                text-align: end;
+            }
+            #category {
+                position: absolute; right: 15px; top: 430px;
+                text-align: end;
+            }
+            #write {
+                position: absolute; right: 15px; top: 500px;
+                text-align: end;
+            }
+
+            #middle {
+                width: 665px; height: 100vh; margin: 0 auto; /*border: 1px blue solid; */
+                position: relative; left: 40px;
+                
+            }
+
+            h1 {
+                position: relative; top: 150px; left: 15px;
+            }
+
+            form {
+                position: relative;
+            }
+
+            #blank {
+                position: relative; top: 300px; left: 100px;
+            }
+
+            #btn {
+                position: relative; top: 360px; left: 100px; padding: 6px 8px;
+                width: 299px; height: 40px;
+                border: none; background-color: rgb(61, 74, 255); color: white;
+                border-radius: 5px;
+            }
+
+            span {
+                color: red;
+            }
+
+            input {
+                border: 1.5px solid lightgray; border-radius: 3px;
+                width: 280px; height: 30px; padding: 5px 8px; 
+            }
+
+            #pw {
+                position: relative; top: 20px;
+            }
+
+
+            #box1 {
+                position: relative; top: 398px; right: 205px;
+                color: gray; border: none; font-size: 13px; background-color: white;
+
+            }
+
+            /*글자 폰트*/
+
+            .font1 {font-size: 16px; color: black;}
+            .font2{font-size: 19px;}
+            .bold {font-weight: bold;}
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div id="left">
+                <h2>서비스 이름</h2>
+
+                <div id="home" class="font2">홈</div>
+                <div id="category" class="font2">카테고리</div>
+
+                <div id="write" class="font2">글쓰기</div>
+            </div>
+
+            <div id="middle">
+                <h1>로그인</h1>
+
+                <div id="blank">
+
+                    <form>
+                        <div id="id">
+                            <div class="font1">아이디<span> *</span></div>
+                            <input type="text">
+                        </div>
+
+                        <div id="pw">
+                            <div class="font1">비밀번호<span> *</span></div>
+                            <input type="password">
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <button type="submit" id="btn" class="font1 bold">로그인</button>
+                <button type="button" id="box1">아이디 및 비밀번호 찾기</button>
+            </div>
+
+
+
+        </div>
+    </body>
+</html>
