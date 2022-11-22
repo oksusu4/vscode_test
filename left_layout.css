@@ -1,0 +1,43 @@
+body {
+    width: 1000px; margin: 0 auto;
+    /*border: 1px gray solid;*/
+}
+
+#wrap {
+    justify-content: center;
+}
+
+#left {
+    width: 160px; height: 100vh;
+    position: fixed; 
+    border-right: 0.5px lightgray solid;
+    /*background-color: lightgoldenrodyellow;*/
+}
+
+#home {
+    position: absolute; right: 15px; top: 400px;
+    text-align: end;
+}
+#category {
+    position: absolute; right: 15px; top: 430px;
+    text-align: end;
+}
+#write {
+    position: absolute; right: 15px; top: 500px;
+    text-align: end;
+}
+
+#middle {
+    width: 665px; height: 100vh; margin: 0 auto; /*border: 1px blue solid; */
+    position: relative; left: 40px;
+    
+}
+
+
+
+
+/*글자 폰트*/
+
+.font1 {font-size: 16px; color: black;}
+.font2{font-size: 19px;}
+.bold {font-weight: bold;}
